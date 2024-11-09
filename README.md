@@ -1,34 +1,39 @@
 # LAS-HDF5 Converter
 
-A Python program for converting point cloud data between LAS and HDF5 formats. The program utilizes PDAL for high-speed conversion and supports multiprocessing capabilities.
+A tool for converting point cloud data between LAS and HDF5 formats. Features high-speed conversion using PDAL and supports multiprocessing.
 
 ## Features
 
-* LAS to HDF5 conversion
-* HDF5 to LAS conversion
-* Multiprocessing support
-* Memory usage control
-* Progress tracking
-* Detailed error reporting
+- Convert LAS format to HDF5 format
+- Convert HDF5 format to LAS format
+- Multiprocessing support
+- Memory usage control
+- Detailed conversion progress
+- Comprehensive error output
 
 ## Requirements
 
-* Python 3.6 or higher
-* Required Python packages:
-  * pdal
-  * numpy
-  * h5py
-  * laspy
-  * tqdm
-  * json
+- Python 3.6 or higher
+- Required Python packages:
+ - pdal
+ - numpy
+ - h5py
+ - laspy
+ - tqdm
+ - json
 
 ## Installation
-
-1. Install required packages:
 ```bash
+# Install required packages
 pip install pdal numpy h5py laspy tqdm
 
-2. Install PDAL:
-* Ubuntu:
-```bash
+# Install PDAL (for Ubuntu/WSL2)
 sudo apt-get install pdal
+
+## Usage
+```bash
+# Convert LAS to HDF5
+python ST0las2hdf_perfect_kana_pdal.py input.las output.hdf5
+
+# Convert HDF5 to LAS
+python ST0las2hdf_perfect_kana_pdal.py input.hdf5 output.las --to-las
