@@ -29,6 +29,7 @@ pip install pdal numpy h5py laspy tqdm
 
 # Install PDAL (for Ubuntu/WSL2)
 sudo apt-get install pdal
+```
 
 ## Usage
 ```bash
@@ -37,3 +38,4 @@ python ST0las2hdf_perfect_kana_pdal.py input.las output.hdf5
 
 # Convert HDF5 to LAS
 python ST0las2hdf_perfect_kana_pdal.py input.hdf5 output.las --to-las
+```
