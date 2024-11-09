@@ -27,3 +27,8 @@ A Python program for converting point cloud data between LAS and HDF5 formats. T
 1. Install required packages:
 ```bash
 pip install pdal numpy h5py laspy tqdm
+
+2. Install PDAL:
+* Ubuntu:
+```bash
+sudo apt-get install pdal
