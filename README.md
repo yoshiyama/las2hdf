@@ -39,3 +39,6 @@ python ST0las2hdf_perfect_kana_pdal.py input.las output.hdf5
 # Convert HDF5 to LAS
 python ST0las2hdf_perfect_kana_pdal.py input.hdf5 output.las --to-las
 ```
+
+## License
+This project is licensed under the MIT License.
